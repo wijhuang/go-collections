@@ -4,7 +4,7 @@ import "fmt"
 
 func Add(nums ...int) int {
 	res := 0
-	for n := range nums {
+	for _, n := range nums {
 		res += n
 	}
 	return res
